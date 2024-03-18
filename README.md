@@ -34,9 +34,9 @@ Update the below as needed for the specified product staking:
 SOLSTAKE=true  
 AVAXSTAKE=true  
 
-##Running the Script:
+## Running the Script:
 
-###Start the script:
+### Start the script:
 
 Bash
 ```
