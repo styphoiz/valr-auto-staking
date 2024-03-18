@@ -1,0 +1,16 @@
+{
+  "name": "valr-staking",
+  "version": "1.0.0",
+  "description": "This script automates the staking of SOL and AVAX on the Valr platform at one-hour intervals.",
+  "main": "staking.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0"
+  }
+}
