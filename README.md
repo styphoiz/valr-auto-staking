@@ -22,7 +22,7 @@ npm install dotenv crypto node-fetch@2
 ```
 Use code with caution.  
 
-Configuration:  
+### Configuration:  
 Rename .env_sample to .env  
 
 ##Set up your API keys with the following configs:  
