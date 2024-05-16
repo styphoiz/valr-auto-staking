@@ -6,8 +6,8 @@ This script automates the staking of SOL and AVAX on the Valr platform at one-ho
 
 Prerequisites:
 
-Node.js and npm (or yarn) installed
-A Valr account with API credentials
+Node.js and npm (or yarn) installed.  
+A Valr account with API credentials.  
 Installation:
 
 Clone this repository or download the script.
