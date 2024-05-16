@@ -8,6 +8,8 @@ Prerequisites:
 
 Node.js and npm (or yarn) installed.  
 A Valr account with API credentials.  
+
+
 Installation:
 
 Clone this repository or download the script.
