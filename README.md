@@ -35,6 +35,7 @@ VALR_SECRET_STAKING=your_api_secret
 Update the below as needed for the specified product staking:  
 SOLSTAKE=true  
 AVAXSTAKE=true  
+TRXSTAKE=true  
 
 ## Running the Script:
 

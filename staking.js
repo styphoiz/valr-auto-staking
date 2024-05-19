@@ -7,6 +7,7 @@ const apiKey = process.env.VALR_API_KEY_STAKING;
 const secret = process.env.VALR_SECRET_STAKING;
 const SOLSTAKE = true;
 const AVAXSTAKE = true;
+const TRXSTAKE = true;
 
 async function getBalance(currency, fixed, roundDown = false) {
   const url = `https://api.valr.com/v1/account/balances?excludeZeroBalances=true`;
@@ -122,6 +123,16 @@ async function runInterval1() {
         console.log(`[${new Date().toISOString()}] AVAX staked successfully`);
       } else {
         console.log(`[${new Date().toISOString()}] Failed to stake AVAX`);
+      }
+    }
+    if (TRXSTAKE) {
+      const trxBal = await getBalance("TRX", 6, true);
+      console.log(`[${new Date().toISOString()}] Staking TRX: ${trxBal} TRX`);
+      const trxStakeResponse = await stake("TRX", trxBal);
+      if (trxStakeResponse.ok) {
+        console.log(`[${new Date().toISOString()}] TRX staked successfully`);
+      } else {
+        console.log(`[${new Date().toISOString()}] Failed to stake TRX`);
       }
     }
   } catch (error) {
